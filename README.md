@@ -62,7 +62,7 @@ _SOSLog_ leverages the socket implementation of Steven Frank's _Smallsocket Libr
 
 ## License
 
-MIT License
+SOSLog-ObjC is available under the MIT license. See the LICENSE file for more info.
 
 ## Changelog
 
