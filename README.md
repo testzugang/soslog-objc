@@ -1,7 +1,10 @@
-soslog-objc
+SOSLog-ObjC
 ===========
 
+<img src="https://raw.github.com/testzugang/soslog-objc/master/assets/sos_logging_objc1.jpg"/>
+
 SOSLog is a small and efficient logging library to use all the features of Powerflasher SOS max (http://sos.powerflasher.com) for logging with Objective-C.
+
 
 ## Features
 
