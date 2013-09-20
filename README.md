@@ -62,6 +62,7 @@ If logging is needed when testing on a device the ip of the os has to be set:
 
 _SOSLog_ leverages the socket implementation of Steven Frank's _Smallsocket Library_ (http://smallsockets.sourceforge.net/) to establish a connection to SOS max at application startup. Log messages are sent through this connection as binary data.
 
+_SOSLog_ and its dependencies does not support ARC yet so `-fno-objc-arc` has to be added as compiler flag for each file.
 
 ## License
 
