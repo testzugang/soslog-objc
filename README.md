@@ -10,23 +10,23 @@ SOSLog is a small and efficient logging library to use all the features of Power
 
 As alternative for using Xcode's builtin _NSLog_ mechanism _SOSLog_ comes with the following features:
   * **Different log levels:**
-  You can use the levels _Trace_, _Debug_, _Info_, _Warn_, _Error_ and _Fatal_.
+  Available levels _Trace_, _Debug_, _Info_, _Warn_, _Error_ and _Fatal_.
   * **Global log level:**
   Set a threshold for all components from _Off_ up to _Fatal_.
   * **Individual log level for each component:**
   Set each component's (class) log level individually. This can be done at application startup or any later time.
   * **Configurable log messages:**
-  Each log message can be printed with log level, component's name or line number.
+  Each log message can be printed with log level, component's name and line number.
   * **Works with the iPhone simulator and test devices:**
-  To use a test device only the ip of your system has to be set.
+  To use a test device only the ip of your local machine has to be set.
   * **No overhead in the release version of an app:**
   _SOSLog_ doesn't contain any implementation when a release version is build.
   * **<a href="http://sos.powerflasher.com">SOS max</a> features:**
-  Search within log messages and filter messages using regular expressions. Log from different sources at the same time, e.q. client and backend.
+  Search within log messages and filter messages using regular expressions. Log from different sources at the same time, e.g. client and backend.
 
 ## How to use SOSLog in a project
 
-To add logging functionality to a class the SOSLog.h header file has to be imported:
+To add logging functionality to a class import the SOSLog.h header file:
 
   `#import "SOSLog.h"`
 
@@ -53,6 +53,8 @@ To log a message the C function `log(level, format, args)` has to be called wher
   `log(sos_Warn, @"It's getting more serious");`
 
   `log(sos_Error, @"%i is equal to sos_Error", 2);`
+  
+  There are also convenient methods for each log level: `log_t log_d log_w log_e log_f`
 
 If logging is needed when testing on a device the ip of the os has to be set:
 
@@ -73,7 +75,7 @@ SOSLog-ObjC is available under the MIT license. See the LICENSE file for more in
 #### 1.5
 Sep 20th 2013
 * Migration from Google Code (SVN) to GitHub
-* Added convenience macros for all log levels (`logd` etc.)
+* Added convenience macros for all log levels (`log_d` etc.)
 
 #### 1.4
 Jun 12th 2011
