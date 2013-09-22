@@ -39,7 +39,8 @@ To configure _SOSLog_ there are some static methods which are more or less optio
 
   `[SOSLog showLogLevel:YES andComponentName:YES andLineNumber:YES];` (by default only the logged message will be shown)
 
-As default logging is activated for all components at the global log level. If components are configured individually only these will be logged.
+As default logging is activated for all components at the global log level. If components are configured individually only these will be logged:
+
   `[SOSLog setLogLevel:sos_Trace forComponent:@__FILE__]; // this file's name`
 
   `[SOSLog setLogLevel:sos_Warn forComponent:@"SOSLoggingDemoViewController.m"];`
